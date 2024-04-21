@@ -1,0 +1,151 @@
+/* Global styles */
+body {
+    /* Set font family and background color */
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0b;
+    margin: 0;
+    padding: 0;
+    /* Center content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Heading styles */
+h2 {
+    color: #ffffff; /* Set text color */
+}
+ 
+/* Login container styles */
+.login-container {
+    /* Set background color, padding, border radius, and initial box shadow */
+    background-color: hwb(0 93% 6% / 0.116);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px #ff0101; /* Initial box shadow color */
+    /* Apply neon glow animation */
+    animation: neon-glow 5s infinite linear;
+}
+
+/* Additional styles for headings inside login container */
+.login-container h2 {
+    text-align: center;
+}
+
+/* Input field styles */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    /* Set width, padding, margin, border, background color, box sizing, and transition */
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    color: #ffffff; /* Set text color */
+}
+
+/* Input field focus styles */
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-bottom-color: #007bff; /* Set border color on focus */
+    outline: none;
+}
+
+/* Label styles for input fields */
+.login-container input[type="text"]:focus + label,
+.login-container input[type="password"]:focus + label,
+.input-filled {
+    /* Set font size, move label up, and change color on focus or when input is filled */
+    font-size: 15px;
+    transform: translateY(-25px);
+    color: #007bff;
+}
+
+/* Position and style labels for input fields */
+.login-container label {
+    position: absolute;
+    top: 17px;
+    left: 5px;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Submit button styles */
+.login-container input[type="submit"] {
+    /* Set width, padding, margin, border, border radius, background color, text color, and cursor */
+    width: 100%;
+    padding: 10px;
+    margin: 35px 0 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Set initial background color */
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Submit button hover styles */
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3; /* Set hover background color */
+}
+
+/* Additional options styles */
+.login-options {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/* Link styles */
+.login-options a {
+    text-decoration: none;
+    color: #007bff; /* Set link color */
+}
+
+/* Link hover styles */
+.login-options a:hover {
+    color: #00fff2; /* Set link color on hover */
+}
+
+/* Additional paragraph link styles */
+p a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #007bff; /* Set link color */
+}
+
+/* Paragraph link hover styles */
+p a:hover {
+    color: #00fff2; /* Set link color on hover */
+}
+
+/* Animation for neon glow effect */
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0px 0px 25px #ff0101;
+    }
+    14% {
+        box-shadow: 0px 0px 25px #ffff00;
+    }
+    29% {
+        box-shadow: 0px 0px 25px #33ff00;
+    }
+    43% {
+        box-shadow: 0px 0px 25px #00ffff;
+    }
+    57% {
+        box-shadow: 0px 0px 25px #005eff;
+    }
+    71% {
+        box-shadow: 0px 0px 25px #f700ff;
+    }
+    100% {
+        box-shadow: 0px 0px 25px #ff0505;
+    }
+}
+
