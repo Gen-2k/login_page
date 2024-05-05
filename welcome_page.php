@@ -52,6 +52,6 @@ session_start(); // Start the session
 <canvas id="canvas"></canvas>
 <!-- Heading -->
 <h1>WELCOME TO OUR PAGE <br>Hi <span class="username"><?php echo $_SESSION['username_or_email']; ?></span>,You have successfully logged in.</h1>
-<script src="script.js"></script>
+<script src="js/animated_balls.js"></script>
 </body>
 </html>

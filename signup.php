@@ -11,7 +11,7 @@ session_start();
     <!-- Set page title -->
     <title>Sign Up Page</title>
     <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
         /* Shake animation */
         @keyframes shake {
@@ -65,7 +65,7 @@ session_start();
         <p style="text-align: center; margin-top: 15px;color: #ffffff;">Already have an account? <a href="index.php">Login</a></p>
     </div>
     <!-- JavaScript script for input field animations -->
-    <script src="signup_form_animations.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
   

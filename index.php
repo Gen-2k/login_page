@@ -11,7 +11,7 @@ session_start();
     <!-- Set page title -->
     <title>Login Page</title>
     <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
         /* Shake animation */
         @keyframes shake {
@@ -70,6 +70,6 @@ session_start();
     </div>
 
     <!-- JavaScript script for input field animations -->
-    <script src="login_form_animations.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

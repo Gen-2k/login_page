@@ -1,11 +1,9 @@
 /* Global styles */
 body {
-    /* Set font family and background color */
     font-family: Arial, sans-serif;
     background-color: #0b0b0b;
     margin: 0;
     padding: 0;
-    /* Center content vertically and horizontally */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,29 +12,29 @@ body {
 
 /* Heading styles */
 h2 {
-    color: #ffffff; /* Set text color */
+    color: #ffffff;
 }
- 
-/* Login container styles */
-.login-container {
-    /* Set background color, padding, border radius, and initial box shadow */
+
+/* Container styles for both login and sign-up pages */
+.login-container, .signup-container {
     background-color: hwb(0 93% 6% / 0.116);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 25px #ff0101; /* Initial box shadow color */
-    /* Apply neon glow animation */
+    box-shadow: 0px 0px 25px #ff0101;
     animation: neon-glow 5s infinite linear;
 }
 
-/* Additional styles for headings inside login container */
-.login-container h2 {
+/* Additional styles for headings inside containers */
+.login-container h2, .signup-container h2 {
     text-align: center;
 }
 
-/* Input field styles */
+/* Input field styles for both login and sign-up pages */
 .login-container input[type="text"],
-.login-container input[type="password"] {
-    /* Set width, padding, margin, border, background color, box sizing, and transition */
+.login-container input[type="password"],
+.signup-container input[type="text"],
+.signup-container input[type="password"],
+.signup-container input[type="email"] {
     width: 100%;
     padding: 10px;
     margin: 5px;
@@ -45,28 +43,33 @@ h2 {
     background-color: transparent;
     box-sizing: border-box;
     transition: all 0.3s ease;
-    color: #ffffff; /* Set text color */
+    color: #ffffff;
 }
 
-/* Input field focus styles */
+/* Input field focus styles for both pages */
 .login-container input[type="text"]:focus,
-.login-container input[type="password"]:focus {
-    border-bottom-color: #007bff; /* Set border color on focus */
+.login-container input[type="password"]:focus,
+.signup-container input[type="text"]:focus,
+.signup-container input[type="password"]:focus,
+.signup-container input[type="email"]:focus {
+    border-bottom-color: #007bff;
     outline: none;
 }
 
-/* Label styles for input fields */
+/* Label styles for input fields for both pages */
 .login-container input[type="text"]:focus + label,
 .login-container input[type="password"]:focus + label,
+.signup-container input[type="text"]:focus + label,
+.signup-container input[type="password"]:focus + label,
+.signup-container input[type="email"]:focus + label,
 .input-filled {
-    /* Set font size, move label up, and change color on focus or when input is filled */
     font-size: 15px;
     transform: translateY(-25px);
     color: #007bff;
 }
 
-/* Position and style labels for input fields */
-.login-container label {
+/* Position and style labels for input fields for both pages */
+.login-container label, .signup-container label {
     position: absolute;
     top: 17px;
     left: 5px;
@@ -76,52 +79,53 @@ h2 {
     pointer-events: none;
 }
 
-/* Submit button styles */
-.login-container input[type="submit"] {
-    /* Set width, padding, margin, border, border radius, background color, text color, and cursor */
+/* Submit button styles for both pages */
+.login-container input[type="submit"],
+.signup-container input[type="submit"] {
     width: 100%;
     padding: 10px;
     margin: 35px 0 0;
     border: none;
     border-radius: 5px;
-    background-color: #007bff; /* Set initial background color */
+    background-color: #007bff;
     color: #fff;
     cursor: pointer;
 }
 
-/* Submit button hover styles */
-.login-container input[type="submit"]:hover {
-    background-color: #0056b3; /* Set hover background color */
+/* Submit button hover styles for both pages */
+.login-container input[type="submit"]:hover,
+.signup-container input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-/* Additional options styles */
-.login-options {
+/* Additional options styles for both pages */
+.login-options, .signup-options {
     text-align: center;
     margin-top: 15px;
     font-size: 15px;
 }
 
-/* Link styles */
-.login-options a {
+/* Link styles for both pages */
+.login-options a, .signup-options a {
     text-decoration: none;
-    color: #007bff; /* Set link color */
+    color: #007bff;
 }
 
-/* Link hover styles */
-.login-options a:hover {
-    color: #00fff2; /* Set link color on hover */
+/* Link hover styles for both pages */
+.login-options a:hover, .signup-options a:hover {
+    color: #00fff2;
 }
 
-/* Additional paragraph link styles */
+/* Additional paragraph link styles for both pages */
 p a {
     font-size: 15px;
     text-decoration: none;
-    color: #007bff; /* Set link color */
+    color: #007bff;
 }
 
-/* Paragraph link hover styles */
+/* Paragraph link hover styles for both pages */
 p a:hover {
-    color: #00fff2; /* Set link color on hover */
+    color: #00fff2;
 }
 
 /* Animation for neon glow effect */
@@ -148,4 +152,3 @@ p a:hover {
         box-shadow: 0px 0px 25px #ff0505;
     }
 }
-
