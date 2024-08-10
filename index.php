@@ -63,7 +63,7 @@ session_start();
         </form>
         <!-- Login options -->
         <div class="login-options">
-            <a href="#">Forgot password?</a>
+            <a href="forget_password.php">Forgot password?</a>
         </div>
         <!-- Sign up link -->
         <p style="text-align: center; margin-top: 15px;color: #ffffff;">Don't have an account? <a href="signup.php">Sign up</a></p>
